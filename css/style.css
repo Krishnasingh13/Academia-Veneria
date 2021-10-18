@@ -1,0 +1,505 @@
+@font-face{
+    font-family: "Gilroy";
+    font-weight: 800;
+    src: url(../assests/Fonts/Gilroy-Black.otf);
+}
+@font-face{
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url(../assests/fonts/Gilroy-Light.otf);
+}
+@font-face{
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url(../assests/fonts/Gilroy-Regular.otf);
+}
+@font-face{
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url(../assests/fonts/Gilroy-Semibold.otf);
+}
+@font-face{
+    font-family: "Gilroy";
+    font-weight: 400;
+    src: url(../assests/fonts/Gilroy-Medium.otf);
+}
+@font-face{
+    font-family: "Ogg";
+    font-weight: 900;
+    src: url(../assests/fonts/OggBold.ttf);
+}
+@font-face{
+    font-family: "Ogg";
+    font-weight: 400;
+    src: url(../assests/fonts/OggThin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ogg';
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#webpage {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#back {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #F3ECE4;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 60px;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-family: "Gilroy";
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+nav a:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Ogg";
+    font-size: 20px;
+}
+
+#back p {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    line-height: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#back #imgs {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 4rem;
+    position: relative;
+}
+
+#back #imgs .small {
+    width: 14%;
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: yellow;
+}
+
+#back #imgs .small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#back #imgs #l1 {
+    left: 0%;
+}
+
+#back #imgs #r1 {
+    right: 0%;
+}
+
+#back #imgs .center {
+    width: 38%;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back #imgs .center video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back #imgs .medium {
+    width: 19%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#back #imgs .medium video {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back #imgs #l2 {
+    left: 14%;
+}
+
+#back #imgs #r2 {
+    right: 14%;
+}
+
+
+
+
+
+#about {
+    font-family: "ogg";
+    font-weight: 300;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+    background-color: #F3ECE4;
+}
+
+#about h1 {
+    opacity: 0;
+    font-size: 65px;
+    font-weight: 500;
+}
+
+#about h4 {
+    font-weight: 500;
+    opacity: 0;
+    color: #222222;
+}
+
+#about #amain {
+    width: 100%;
+    min-height: 88vh;
+}
+
+#adesc {
+    min-height: inherit;
+    display: flex;
+}
+
+#about #amain h1 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#about #amain .line {
+    width: 0%;
+    height: 2px;
+    background-color: rgb(160, 141, 36);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#about #amain #aleft {
+    width: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    font-weight: 400;
+}
+
+#about #amain #aleft p:nth-child(1) {
+    line-height: 38px;
+    opacity: 0;
+    width: 90%;
+    font-size: 22px;
+    color: #222222;
+}
+
+#about #amain #aleft p:nth-child(2) {
+    opacity: 0;
+    font-size: 17px;
+    width: 90%;
+    color: rgb(126, 102, 41);
+}
+
+
+#about #amain #aright {
+    width: 50%;
+    min-height: inherit;
+}
+
+#about #amain #aright #ellipse {
+    opacity: 0;
+    width: 150px;
+    height: 220px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 11rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#about #amain #aright #ellipse img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    object-fit: cover;
+}
+
+
+
+
+#products {
+    display: flex;
+    width: 100%;
+    min-height: 95vh;
+    background-color: #F3ECE4;
+    padding: 0rem 3rem;
+}
+
+#products #pleft {
+    width: 30%;
+    min-height: inherit;
+}
+
+#products #pleft #pimg {
+    opacity: 0;
+    width: 140px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 13rem;
+}
+
+#products #pleft #pimg img {
+    width: 100%;
+    height: 100%;
+    transform: scale(2.2);
+    object-fit: cover;
+}
+
+
+#pright {
+    width: 70%;
+    min-height: 80vh;
+    padding: 50px 40px;
+}
+
+.row {
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    min-height: 140px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+.child1 {
+    position: absolute;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    min-height: inherit;
+    border-top: 1px solid rgb(173, 139, 53);
+    border-bottom: 1px solid rgb(173, 139, 53);
+}
+
+.child2 {
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    min-height: inherit;
+}
+
+.row:hover .child1 {
+    transform: rotate(2deg);
+}
+
+#pright a {
+    display: inline-block;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
+
+@media(max-width:650px) {
+    #back {
+        min-height: 100vh;
+    }
+
+    #back nav {
+        padding: 10px 10px;
+    }
+
+    #back nav a {
+        font-size: 10px;
+    }
+
+    #back p {
+        width: 95%;
+        font-size: 30px;
+    }
+
+    #l1,
+    #l2,
+    #r2,
+    #r1 {
+        display: none;
+    }
+
+    #back #imgs {
+        padding: 0px 0px;
+        margin-top: 2rem;
+        width: 100%;
+        min-height: 70vh;
+        position: relative;
+    }
+
+    #back #imgs .center {
+        padding: 0px;
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .center video {
+        height: 100%;
+    }
+
+    #about {
+        padding: 2rem 1rem;
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    #about h4 {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    #about #amain h1 {
+        margin-top: 2rem;
+    }
+
+    #about #amain #adesc {
+        display: initial;
+    }
+
+    #about #amain #adesc #aleft {
+        padding: 1rem;
+        width: 100%;
+        display: initial;
+    }
+
+    #about #amain #adesc #aleft p {
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+
+    #about #amain #adesc #aright {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    #about #amain #adesc #aright #ellipse {
+        margin-top: 6rem;
+        padding: 2rem;
+    }
+
+    #products {
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    #products #pleft {
+        padding: 2rem;
+        width: 100%;
+        min-height: 60vh;
+    }
+
+    #products #pleft #pimg {
+        margin: 1rem auto;
+    }
+
+    #products #pright {
+        padding: 5rem 1rem;
+        width: 100%;
+    }
+
+    #products #pright .row {
+        margin-top: -1px;
+    }
+
+    #products #pright .row .child1 {
+        border-top: 1px solid rgb(160, 141, 36);
+        border-bottom: 1px solid rgb(160, 141, 36);
+    }
+
+    #products #pright .row .child2 {
+        margin-top: 6px;
+        padding: .4rem;
+    }
+
+    #products #pright .row .child2 h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #products #pright .row .child2 h4 {
+        font-size: 13px;
+    }
+
+    #products #pright .row .child2 p {
+        font-size: 11px;
+    }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+}
